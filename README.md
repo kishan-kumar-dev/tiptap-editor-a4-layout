@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# A4 WYSIWYG Editor with Tiptap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Tiptap-based A4 WYSIWYG editor designed for editing multi-page documents with visual A4 boundaries, dynamic page numbers, per-page headers/footers, manual and automatic page breaks, and support for rich text formatting. It is styled with Tailwind CSS and optimized for printing and PDF export.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 📄 Visual A4-sized editable pages
+- 🧾 Per-page Header and Footer (with dynamic page numbers)
+- 🔠 Rich text editing via Tiptap (Bold, Italic, Underline, Alignment, Font Size, Font Family, Text & Background Color)
+- ➕ Manual Page Break insertion
+- ✂️ Automatic Page Splitting (optional)
+- 🖼️ Sidebar with page thumbnails
+- 🖨️ Print and PDF export support with accurate formatting
+- 🌈 Full Tailwind styling
+- 🖼️ Image Uploads (optional extension)
+- 💧 Watermark toggle (optional)
+- 🔍 Zoom/Fit-to-Width (planned)
+- 🧮 Word/Character Count (planned)
+- 💾 Auto-save to localStorage (planned)
+- 🌍 RTL Language Support (planned)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📁 File Structure
 
-### `npm test`
+- `src/components/TiptapEditor.tsx`  
+  The main Tiptap editor with rich text formatting and page break insertion.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/components/Sidebar.tsx`  
+  Thumbnail-based navigation for switching between pages.
 
-### `npm run build`
+- `src/styles/index.css`  
+  Tailwind + custom CSS for layout, print rules, A4 pages, header/footer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `src/extensions/*`  
+  Custom Tiptap extensions like `FontSize`, `FontFamily`, `PageBreak`, etc.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `src/App.tsx`  
+  Main app file managing page data, dynamic rendering, export, and navigation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+npm start

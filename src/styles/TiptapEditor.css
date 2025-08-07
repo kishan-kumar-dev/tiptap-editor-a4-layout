@@ -1,0 +1,48 @@
+.editor-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  min-height: 500px;
+  background: white;
+}
+
+.toolbar {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  padding: 0.5rem;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.thumbnail.active {
+  background-color: #d0eaff;
+  font-weight: bold;
+}
+
+.editor-section {
+  flex: 1;
+}
